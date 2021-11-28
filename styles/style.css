@@ -1,21 +1,25 @@
 
-/***** BODY*****/
+/********** BODY**********/
 
 body{
-    font-family: 'Be Vietnam Pro', sans-serif;
     background-image: url('/img/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    background-position: right;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0px;
 }
 
-/***** HEADER *****/
+/********** HEADER **********/
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 80px;
+    margin-bottom: 30px;
 }
 
-#menu{
+#menuIcon{
     display: none;
 }
 
@@ -49,45 +53,87 @@ button{
 
 button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    background-color: rgb(255, 239, 234);
+    background-color: rgb(143, 148, 167);
 }
 
-/****** SECTION: INTRO *****/
+/*********** SECTION: INTRO **********/
 
-#intro{
+#sectionIntro{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 80px;
+    margin-bottom: 30px;
 }
 
-/***** SECTION: FEATURE *****/
+h1{
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: rgb(29, 30, 37);
+}
 
-#feature{
+p{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: rgb(35, 44, 81);
+}
+
+/********** SECTION: FEATURE **********/
+
+#sectionFeatures{
     display: flex;
+    padding: 5px 80px;
+    color: rgb(35, 44, 81);
 }
 
+h2{
+    font-size: 42px;
+    color: rgb(35, 44, 81);
+    padding: 10px;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 #featureOne::before{
-    display: inline;
     content: "01";
     background-color: rgb(242, 95, 58);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
     color: white;
-    border-radius: 50px;
-    display: inline;
 }
 
-#comments{
+#featureTwo::before{
+    content: "02";
+    background-color: rgb(242, 95, 58);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+}
+
+#featureThree::before{
+    content: "03";
+    background-color: rgb(242, 95, 58);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+}
+
+/********* SCETION: COMMENTS - CARDS **********/
+
+#sectionComments{
     text-align: center;
-}
-
-#comments h2{
-    margin-bottom: 130px;
 }
 
 #cards{
     display: flex;
     justify-content: space-around;
-    
 }
 
 .card{
@@ -95,13 +141,16 @@ button:hover{
     background-color: rgb(249, 249, 249);
     position: relative;
     padding: 10px;
-    margin-bottom: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 .card img{
     position: absolute;
-    top: -40%;
+    top: -75%;
     right: 33%;
+    margin-top: 100px;
 }
 
 .card h3{
@@ -110,18 +159,18 @@ button:hover{
 
 /***** SECTION: BANNER ******/
 
-#banner{
+#sectionBanner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     background-image: url('/img/bg-simplify-section-desktop.svg');
     background-color: rgb(242, 95, 58);
+    padding: 10px 30px;
     margin-top: 30px;
-    padding: 40px;
 }
 
-#banner button{
+#sectionBanner button{
     background-color: white;
     color: rgb(242, 95, 58);
     border-radius: 50px;
@@ -130,8 +179,10 @@ button:hover{
     padding: 10px 30px;
 }
 
-button:hover{
+#sectionBanner button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: rgb(143, 148, 167);
+    color: white;
 }
 
 /***** FOOTER *****/
@@ -140,13 +191,14 @@ footer{
     background-color: rgb(30, 30, 38);
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 60px;
+    color: white;
 }
 
-footer ul{
+#socialNetworks{
     display: flex;
     list-style: none;
-    color: white;
+    align-items: center;
 }
 
 .contact{
@@ -165,6 +217,44 @@ footer a:visited{
     color: white;
 }
 
+footer a:hover{
+    color: rgb(242, 95, 58);
+}
+
+form{
+    display: flex;
+    align-items: flex-start;
+}
+
+#email, #submitButton{
+    margin-right: 10px;
+    border-radius: 30px;
+    border-style: none;
+    padding: 5px 15px;
+}
+
+#email:focus{
+    outline: none;
+}
+
+#email:invalid{
+    border-color: red;
+    margin-bottom: 10px;
+}
+
+#email:invalid + span::after{
+    content: "Please insert a valid email";
+    color: red;
+}
+
+#addEmail{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback{
+    margin: 5px;
+}
 
 
 
