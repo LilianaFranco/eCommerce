@@ -67,7 +67,7 @@ button:hover{
 }
 
 h1{
-    font-size: 72px;
+    font-size: 52px;
     margin-bottom: 20px;
     color: rgb(29, 30, 37);
 }
@@ -400,17 +400,51 @@ form{
         padding: 20px 10px;
         flex-wrap: wrap-reverse;
         justify-content: center;
+        position: relative;
+    }
+
+    .links2{
+        display: flex;
+        flex-direction: column;
+        order: 0;
+        margin: 10px 0px;
+    }
+
+    .links1{
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        margin: 10px 0px;
+    }
+
+    .contact1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .contact1 img{
+        margin: 10px 0px;
+    }
+
+    .contact2{
+        display: flex;
+        align-items: center;
+        order: 4;
+
     }
 
     #copyright{
-        order: -5;
+        position: absolute;
+        bottom: 0px;
+        margin: 20px;
     }
 
-
-    footer a{
-        font-size: 16;
+    #socialNetworks{
+        margin: 10px 0px;;
     }
-
 }
 
 
