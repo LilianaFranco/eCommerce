@@ -172,7 +172,7 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: auto;
     background-image: url('../img/bg-simplify-section-desktop.svg');
     background-color: rgb(242, 95, 58);
     padding: 10px 30px;
@@ -279,6 +279,12 @@ form{
 /************ MEDIA QUERY **********/
 @media (max-width:480px) {
 
+    /***** Body *****/
+
+    body{
+        padding: 5px;
+    }
+
     /***** Header *****/
 
     header nav{
@@ -295,7 +301,7 @@ form{
     }
 
     header{
-        padding: 20px 20px;
+        padding: 20px 10px;
         margin: 0px;
     }
 
@@ -336,7 +342,7 @@ form{
     #sectionFeatures h3{
         font-size: 14px;
         background-color: rgba(242, 95, 58, 0.2) ;
-        padding: 5px 30px;
+        padding: 5px 25px;
         text-align: center;
         margin: 0px;
         position: relative;
@@ -383,7 +389,7 @@ form{
 
     #sectionBanner{
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 10px;
         background-image: url('../img/bg-simplify-section-mobile.svg');
         background-repeat: no-repeat;
     }
@@ -391,22 +397,22 @@ form{
     /***** Footer *****/
 
     footer{
-        flex-direction: column;
-        padding: 10px 10px;
-    }
-    footer .contact2{
-        order: 1;
+        padding: 20px 10px;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
     }
 
-    .links1, .links2{
-        order: 2;
+    #copyright{
+        order: -5;
     }
 
-    .contact1{
-        order: 3;
+
+    footer a{
+        font-size: 16;
     }
 
 }
+
 
 
 
