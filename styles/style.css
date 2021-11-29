@@ -2,7 +2,7 @@
 /********** BODY**********/
 
 body{
-    background-image: url('/img/bg-tablet-pattern.svg');
+    background-image: url('../img/bg-tablet-pattern.svg');
     background-repeat: repeat-y;
     background-position: right;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -173,7 +173,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-image: url('/img/bg-simplify-section-desktop.svg');
+    background-image: url('../img/bg-simplify-section-desktop.svg');
     background-color: rgb(242, 95, 58);
     padding: 10px 30px;
     margin-top: 30px;
@@ -384,6 +384,8 @@ form{
     #sectionBanner{
         flex-direction: column;
         padding: 20px;
+        background-image: url('../img/bg-simplify-section-mobile.svg');
+        background-repeat: no-repeat;
     }
 
     /***** Footer *****/
