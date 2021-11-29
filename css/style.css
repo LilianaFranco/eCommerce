@@ -277,7 +277,7 @@ form{
 }
 
 
-/************ MEDIA QUERY **********/
+/**************************** MEDIA QUERY *************************/
 @media (max-width:480px) {
 
     /***** Header *****/
@@ -304,7 +304,7 @@ form{
     /****** Section: intro ******/
     #sectionIntro{
         flex-direction: column-reverse;
-        padding: 10px 10px;
+        padding: 10px 25px;
         margin: 0px;
         text-align: center;
         
@@ -323,11 +323,12 @@ form{
 
     #sectionFeatures{
         flex-direction: column;
-        padding: 0px 10px;
+        padding: 0px 25px;
     }
 
     #mainFeature p{
         text-align: center;
+        padding: 0px 25px;
     }
 
     h2{
@@ -344,6 +345,7 @@ form{
         position: relative;
         left: -20px;
         text-align: left;
+        width: 100%;
     }
 
     #feature::before{
@@ -358,7 +360,7 @@ form{
     /****** Section: Comments *****/
 
     #sectionComments{
-        padding: 10px 10px;
+        padding: 10px 25px;
     }
 
     .card{
@@ -385,7 +387,7 @@ form{
 
     #sectionBanner{
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 20px 25px;
         background-image: url('../img/bg-simplify-section-mobile.svg');
         background-repeat: no-repeat;
     }
@@ -393,7 +395,7 @@ form{
     /***** Footer *****/
 
     footer{
-        padding: 20px 10px;
+        padding: 20px 25px;
         flex-wrap: wrap-reverse;
         justify-content: center;
         position: relative;
