@@ -53,7 +53,7 @@ button{
 
 button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    background-color: rgb(143, 148, 167);
+    background-color: rgba(242, 95, 58, 0.75)
 }
 
 /*********** SECTION: INTRO **********/
@@ -95,19 +95,23 @@ h2{
 .feature{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
+    align-items: flex-start;
+}
+
+.featureContent{
+    margin-left: 20px;
 }
 
 #sectionFeatures h3{
-    margin: 10px;
+    margin: 5px 0px;
 }
 
 .feature::before{
     background-color: rgb(242, 95, 58);
     border-radius: 30px;
-    padding: 10px 20px;
+    padding: 5px 20px;
     color: white;
-    margin: 10px 20px;
+    margin: 10px 30px;
 }
 
 #featureOne::before{
@@ -190,7 +194,7 @@ h2{
 
 #sectionBanner button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    background-color: rgb(143, 148, 167);
+    background-color: rgb(242, 95, 58);
     color: white;
 }
 
@@ -243,6 +247,11 @@ form{
     padding: 5px 15px;
 }
 
+#submitButton:hover{
+    background-color: rgb(242, 95, 58);
+    color: white;
+}
+
 #email:focus{
     outline: none;
 }
@@ -286,7 +295,7 @@ form{
     }
 
     header{
-        padding: 10px 10px;
+        padding: 20px 20px;
         margin: 0px;
     }
 
@@ -302,6 +311,10 @@ form{
     h1{
         font-size: 36px;
         color: rgb(35, 44, 81);
+    }
+
+    #sectionIntro img{
+        width: 90%;
     }
 
     /***** Section: Feature *****/
@@ -323,16 +336,21 @@ form{
     #sectionFeatures h3{
         font-size: 14px;
         background-color: rgba(242, 95, 58, 0.2) ;
-        padding: 10px 20px;
+        padding: 5px 30px;
         text-align: center;
         margin: 0px;
         position: relative;
         left: -20px;
+        text-align: left;
     }
 
     #feature::before{
         z-index: 1;
         margin: 0px;
+    }
+
+    .featureContent{
+        margin-left: 0px;
     }
 
     /****** Section: Comments *****/
