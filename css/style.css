@@ -19,6 +19,7 @@ header{
     margin-bottom: 30px;
 }
 
+
 #menuIcon{
     display: none;
 }
@@ -279,13 +280,12 @@ form{
 /************ MEDIA QUERY **********/
 @media (max-width:480px) {
 
-    /***** Body *****/
-
-    body{
-        padding: 5px;
-    }
-
     /***** Header *****/
+    header{
+        padding: 20px 10px;
+        margin: 0px;
+        justify-content: space-around;
+    }
 
     header nav{
         display: none;
@@ -294,15 +294,11 @@ form{
     #menuIcon{
         display:inline-flex;
         color: rgb(35, 44, 81);
+        font-size: 24px;
     }
 
     header button{
         display: none;
-    }
-
-    header{
-        padding: 20px 10px;
-        margin: 0px;
     }
 
     /****** Section: intro ******/
@@ -406,34 +402,37 @@ form{
     .links2{
         display: flex;
         flex-direction: column;
-        order: 0;
-        margin: 10px 0px;
+        order: 3;
+        margin: 10px 10px;
     }
 
     .links1{
         display: flex;
         flex-direction: column;
-        order: 1;
-        margin: 10px 0px;
+        order: 2;
+        margin: 10px 10px;
     }
 
     .contact1{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        order: -1;
+        align-items: center;
+        order: -2;
         margin-bottom: 20px;
+        width: 90%;
     }
 
     .contact1 img{
-        margin: 10px 0px;
+        width: 70%;
+        margin: 20px;
     }
 
     .contact2{
         display: flex;
         align-items: center;
         order: 4;
-
+        margin: 0px 30px;
     }
 
     #copyright{
