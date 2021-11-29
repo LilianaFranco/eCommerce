@@ -95,34 +95,34 @@ h2{
 .feature{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; 
+}
+
+#sectionFeatures h3{
+    margin: 10px;
+}
+
+.feature::before{
+    background-color: rgb(242, 95, 58);
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px 20px;
 }
 
 #featureOne::before{
     content: "01";
-    background-color: rgb(242, 95, 58);
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 10px;
-    color: white;
+    margin: 0%;
 }
 
 #featureTwo::before{
     content: "02";
-    background-color: rgb(242, 95, 58);
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 10px;
-    color: white;
+    margin: 0%;
 }
 
 #featureThree::before{
     content: "03";
-    background-color: rgb(242, 95, 58);
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 10px;
-    color: white;
+    margin: 0%;
 }
 
 /********* SCETION: COMMENTS - CARDS **********/
@@ -157,6 +157,11 @@ h2{
     margin-top: 80px;
 }
 
+
+#sectionComments i{
+    display: none;
+}
+
 /***** SECTION: BANNER ******/
 
 #sectionBanner{
@@ -168,6 +173,10 @@ h2{
     background-color: rgb(242, 95, 58);
     padding: 10px 30px;
     margin-top: 30px;
+}
+
+#sectionBanner h2{
+    color: white;
 }
 
 #sectionBanner button{
@@ -199,15 +208,16 @@ footer{
     display: flex;
     list-style: none;
     align-items: center;
+    font-size: 28px;
 }
 
-.contact{
+.contact1, .contact2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.links{
+.links1, .links2{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -255,6 +265,130 @@ form{
 .feedback{
     margin: 5px;
 }
+
+
+/************ MEDIA QUERY **********/
+@media screen and (max-width:375px) {
+
+    /***** Header *****/
+
+    header nav{
+        display: none;
+    }
+
+    #menuIcon{
+        display:inline-flex;
+        color: rgb(35, 44, 81);
+    }
+
+    header button{
+        display: none;
+    }
+
+    header{
+        padding: 10px 10px;
+        margin: 0px;
+    }
+
+    /****** Section: intro ******/
+    #sectionIntro{
+        flex-direction: column-reverse;
+        padding: 10px 10px;
+        margin: 0px;
+        text-align: center;
+        
+    }
+    
+    h1{
+        font-size: 36px;
+        color: rgb(35, 44, 81);
+    }
+
+    /***** Section: Feature *****/
+
+    #sectionFeatures{
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+
+    #mainFeature p{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #sectionFeatures h3{
+        font-size: 14px;
+        background-color: rgba(242, 95, 58, 0.2) ;
+        padding: 10px 20px;
+        text-align: center;
+        margin: 0px;
+        position: relative;
+        left: -20px;
+    }
+
+    #feature::before{
+        z-index: 1;
+        margin: 0px;
+    }
+
+    /****** Section: Comments *****/
+
+    #sectionComments{
+        padding: 10px 10px;
+    }
+
+    .card{
+        width: 85%;
+        margin-bottom: 10px;
+    }
+
+    .hideCard{
+        display: none;
+    }
+    
+    .card img{
+        right: 25%;
+    }
+
+    #sectionComments i{
+        display: block;
+        color: rgb(242, 95, 58);
+        font-size: 42px;
+        margin: 20px;
+    }
+
+    /****** Section: Banner ******/
+
+    #sectionBanner{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /***** Footer *****/
+
+    footer{
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    footer .contact2{
+        order: 1;
+    }
+
+    .links1, .links2{
+        order: 2;
+    }
+
+    .contact1{
+        order: 3;
+    }
+
+}
+
+
 
 
 
