@@ -208,6 +208,10 @@ footer{
     color: white;
 }
 
+footer img{
+    width: auto;
+}
+
 #socialNetworks{
     display: flex;
     list-style: none;
