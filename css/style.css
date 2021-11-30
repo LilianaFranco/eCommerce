@@ -103,7 +103,7 @@ h2{
 
 #sectionFeatures h3{
     margin: 5px 0px;
-    rgb(35, 44, 81);
+    color: rgb(35, 44, 81);
 }
 
 .feature::before{
@@ -276,7 +276,7 @@ form{
 }
 
 
-/**************************** MEDIA QUERY *************************/
+/********************************* MEDIA QUERY *****************************/
 @media (max-width:480px) {
 
     /***** Header *****/
@@ -310,7 +310,7 @@ form{
     }
     
     h1{
-        font-size: 58px;
+        font-size: 36px;
         color: rgb(35, 44, 81);
     }
 
