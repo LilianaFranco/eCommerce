@@ -70,7 +70,7 @@ button:hover{
 h1{
     font-size: 52px;
     margin-bottom: 20px;
-    color: rgb(29, 30, 37);
+    color: rgb(35, 44, 81);
 }
 
 p{
@@ -160,6 +160,7 @@ h2{
 
 .card h3{
     margin-top: 80px;
+    color: rgb(35, 44, 81);
 }
 
 
@@ -346,11 +347,6 @@ form{
         left: -20px;
         text-align: left;
         width: 100%;
-    }
-
-    #feature::before{
-        z-index: 1;
-        margin: 0px;
     }
 
     .featureContent{
