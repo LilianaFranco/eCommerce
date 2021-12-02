@@ -2,9 +2,10 @@
 /********** BODY**********/
 
 body{
-    background-image: url('../img/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
-    background-position: top right;
+    background-image: url('../img/bg-tablet-pattern.svg'), url('../img/bg-tablet-pattern.svg') ;
+    background-position: 100% -12%, -50% 70%;
+    background-size: 50%;
+    background-repeat: no-repeat, no-repeat;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0px;
 }
@@ -53,7 +54,8 @@ button{
 
 button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    background-color: rgba(242, 95, 58, 0.75)
+    background-color: rgb(249,175,157);
+    cursor: pointer; 
 }
 
 /*********** SECTION: INTRO **********/
@@ -69,11 +71,7 @@ button:hover{
 h1{
     font-size: 52px;
     margin-bottom: 20px;
-<<<<<<< HEAD
     color: rgb(35, 44, 81);
-=======
-    color: rgb(35, 44, 81);;
->>>>>>> 3c8d9aa4adb10d86a56180bbc24ac72baff4e026
 }
 
 p{
@@ -155,15 +153,19 @@ h2{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
+.card p{
+    padding: 5px;
+}
+
 .card img{
     position: absolute;
-    top: -75%;
-    right: 30%;
+    top: -70%;
+    left: 30%;
     margin-top: 100px;
 }
 
 .card h3{
-    margin-top: 80px;
+    margin-top: 85px;
     color: rgb(35, 44, 81);
 }
 
@@ -198,8 +200,9 @@ h2{
 
 #sectionBanner button:hover{
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    background-color: rgb(242, 95, 58);
+    background-color: rgb(249,175,157);
     color: white;
+    cursor: pointer;
 }
 
 /***** FOOTER *****/
@@ -229,7 +232,7 @@ footer img{
     justify-content: space-between;
 }
 
-.links1, .links2{
+#links1, #links2{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -256,8 +259,10 @@ form{
 }
 
 #submitButton:hover{
-    background-color: rgb(242, 95, 58);
+    background-color: rgb(249,175,157);
     color: white;
+    cursor: pointer;
+
 }
 
 #email:focus{
@@ -286,6 +291,11 @@ form{
 
 /********************************* MEDIA QUERY *****************************/
 @media (max-width:480px) {
+
+    body{
+        background-position: 200% -5%, -200% 65%;
+        background-size: 80%;
+    }
 
     /***** Header *****/
     header{
@@ -376,8 +386,8 @@ form{
     }
     
     .card img{
-        right: 25%;
         left: 25%;
+        top: -65%;
     }
 
     #sectionComments i{
@@ -405,14 +415,14 @@ form{
         position: relative;
     }
 
-    .links2{
+    #links2{
         display: flex;
         flex-direction: column;
         order: 3;
         margin: 10px 10px;
     }
 
-    .links1{
+    #links1{
         display: flex;
         flex-direction: column;
         order: 2;

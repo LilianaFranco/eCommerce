@@ -9,8 +9,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logoFavicon.svg"> 
     <title>Manage</title>
 </head>
+
+
+<!-- HOLA Victor
+
+    Disfrute mucho haciendo este ejercicio. NO veo la hora de empezar frontend II.
+    Para esta página usé un media query de 480 para móviles, pero revisé con el
+    inspeccionador que funcionara con 375. Los retos que más me gustaron los enumero
+    a continuación:
+
+    1. La sección de las características en el que usé Before: Tardé un rato
+    en entender que before no es al lado, sino que crea el elemento como el primer
+    hijo del contenedor al que se le aplique. Si no es un contenedor lo crea 
+    inmediatamente antes del elemento y hereda la posición dependiendo de su padre.
+    Esto generó frustración en varios compañeros hasta que al entenderlo nos reimos, pues
+    decían que no debería llamarse before, sino above.
+
+    2. Las tarjetas ya las había hecho en los superheroes, pero sigue siendo divertido hacerlas.
+
+    3. El header me llevó loca dos días. Pensé que debía ser column reverse, 
+    pero entonces perdía las dos columnas paralelas de links. El orden me traía loca, 
+    pues pensaba que todo debía hacerlo con order. Fue el mayor reto de todos para mí.
+
+    4. El form fue resuelto por Denise, así que ese reto era bueno, pero me lo sapiaron.
+
+    5. Pensé dejar el background finalmente sencillo, pero me alcanzó el tiempo y decidí
+    buscar como darle espacio a la imagen cuando se repite. Me encontré con algo más fácil, 
+    crear dos imagenes de fondo y darles posiciones diferentes. Sencillo, pero easy.
+
+    PD: El media query se me da fácil. Es seguri la misma lógica, pero disfruto verlo en mi celular.
+
+    DISFRUTA tanto como yo y regalame todos los comentarios o pistas para buscar como mejorarlo, 
+    si tienes tiempo claro. GITHUB pages: https://lilianafranco.github.io/eCommerce/
+
+    Mil gracias por todo, eres la persona con las que más he aprendido HTML y CSS. Explicas muy bien.
+    
+    SALUDOS
+
+\-->
+
 
 <body>
     <header>
@@ -25,7 +65,7 @@
             </ul>
         </nav>
         <button>Get Started</button>
-        <i class="fas fa-bars" id="menuIcon"></i>
+        <i class="fas fa-bars" id="menuIcon"></i> 
     </header>
 
     <section id="sectionIntro">
@@ -109,7 +149,7 @@
     </section>
 
     <section id="sectionBanner">
-        <h2>Simplify how your team works today.</h2>
+        <h2>Simplify how your team works today</h2>
         <button id="whiteButton">Get Started</button>
     </section>
     
@@ -124,13 +164,13 @@
                 <a><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-        <div class="links1">
+        <div id="links1">
             <a href="">Home</a>
             <a href="">Pricing</a>
             <a href="">Products</a>
             <a href="">About Us</a>
         </div>
-        <div class="links2">
+        <div id="links2">
             <a href="">Careers</a>
             <a href="">Community</a>
             <a href="">Privacy Policy</a>
